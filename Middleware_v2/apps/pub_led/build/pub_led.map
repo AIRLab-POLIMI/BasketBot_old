@@ -1,0 +1,493 @@
+
+Discarded input sections
+
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/led.o
+ .group         0x00000000        0x8 build/obj/pub_led.o
+ .group         0x00000000        0x8 build/obj/pub_led.o
+ .group         0x00000000        0x8 build/obj/pub_led.o
+ .group         0x00000000        0x8 build/obj/pub_led.o
+ .group         0x00000000        0x8 build/obj/pub_led.o
+ .group         0x00000000        0x8 build/obj/pub_led.o
+ .group         0x00000000        0x8 build/obj/pub_led.o
+ .group         0x00000000        0x8 build/obj/pub_led.o
+ .group         0x00000000        0x8 build/obj/pub_led.o
+ .group         0x00000000        0x8 build/obj/pub_led.o
+ .group         0x00000000        0x8 build/obj/pub_led.o
+ .group         0x00000000        0x8 build/obj/pub_led.o
+ .group         0x00000000        0x8 build/obj/pub_led.o
+ .group         0x00000000        0x8 build/obj/pub_led.o
+ .group         0x00000000        0x8 build/obj/pub_led.o
+ .group         0x00000000        0x8 build/obj/pub_led.o
+ .group         0x00000000        0x8 build/obj/pub_led.o
+ .group         0x00000000        0x8 build/obj/pub_led.o
+ .group         0x00000000        0x8 build/obj/pub_led.o
+ .group         0x00000000        0x8 build/obj/pub_led.o
+ .group         0x00000000        0x8 build/obj/pub_led.o
+ .group         0x00000000        0x8 build/obj/pub_led.o
+ .group         0x00000000        0x8 build/obj/pub_led.o
+ .text._ZN3r2p8SysLock_7acquireEv
+                0x00000000       0x10 build/obj/pub_led.o
+ .text._ZN3r2p8SysLock_7releaseEv
+                0x00000000       0x10 build/obj/pub_led.o
+ .text._ZN3r2p7SysLock7acquireEv
+                0x00000000        0x8 build/obj/pub_led.o
+ .text._ZN3r2p7SysLock7releaseEv
+                0x00000000        0x8 build/obj/pub_led.o
+ .text._ZN3r2p11MemoryPool_12alloc_unsafeEv
+                0x00000000       0x18 build/obj/pub_led.o
+ .text._ZNK3r2p4Time8to_s_rawEv
+                0x00000000       0x24 build/obj/pub_led.o
+ .text._ZN3r2p4Time2msEl
+                0x00000000       0x20 build/obj/pub_led.o
+ .text._ZN3r2p7Message12reset_unsafeEv
+                0x00000000       0x18 build/obj/pub_led.o
+ .text._ZN3r2p13BasePublisher12alloc_unsafeERPNS_7MessageE
+                0x00000000       0x40 build/obj/pub_led.o
+ .text._ZN3r2p13BasePublisher5allocERPNS_7MessageE
+                0x00000000       0x28 build/obj/pub_led.o
+ .text._ZN3r2p7Thread_5sleepERKNS_4TimeE
+                0x00000000       0x6c build/obj/pub_led.o
+ .text._ZN3r2p6Thread5sleepERKNS_4TimeE
+                0x00000000       0x10 build/obj/pub_led.o
+ .text._ZN3r2p5Topic12alloc_unsafeEv
+                0x00000000       0x2c build/obj/pub_led.o
+ .text._ZN3r2p4TimeC2IlEET_
+                0x00000000       0x14 build/obj/pub_led.o
+ .text._ZN3r2p9PublisherINS_6LedMsgEEC2Ev
+                0x00000000       0x20 build/obj/pub_led.o
+ .text._ZN3r2p9PublisherINS_6LedMsgEED2Ev
+                0x00000000       0x34 build/obj/pub_led.o
+ .text._ZN3r2p9PublisherINS_6LedMsgEED0Ev
+                0x00000000       0x1c build/obj/pub_led.o
+ .text._ZN3r2p4Node9advertiseINS_6LedMsgEEEbRNS_9PublisherIT_EEPKcRKNS_4TimeE
+                0x00000000       0x28 build/obj/pub_led.o
+ .text._ZN3r2p9PublisherINS_6LedMsgEE5allocERPS1_
+                0x00000000       0x1c build/obj/pub_led.o
+ .text._ZN3r2p9PublisherINS_6LedMsgEE7publishERS1_
+                0x00000000       0x1c build/obj/pub_led.o
+ .rodata._ZTVN3r2p9PublisherINS_6LedMsgEEE
+                0x00000000       0x10 build/obj/pub_led.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+flash            0x08000000         0x00020000
+ram              0x20000000         0x00005000
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x00000400                __main_stack_size__ = 0x400
+                0x00000400                __process_stack_size__ = 0x400
+                0x00000000                . = 0x0
+
+startup
+ *(vectors)
+
+.text           0x08013c50      0xca4
+                0x08013c50                _text = .
+                0x08013c50                __text_start__ = .
+ *(.text.startup.*)
+ *(.text)
+ .text          0x08013c50       0xac build/obj/common.o
+                0x08013ca4                pin2led(unsigned int)
+ *fill*         0x08013cfc        0x4 00
+ .text          0x08013d00      0x290 build/obj/led.o
+                0x08013d00                r2p::led2gpio(unsigned int)
+                0x08013d60                r2p::led2pin(unsigned int)
+                0x08013db0                r2p::ledpub_node(void*)
+                0x08013e78                r2p::callback(r2p::LedMsg const&)
+                0x08013efc                r2p::ledsub_node(void*)
+ .text          0x08013f90       0xd0 build/obj/pub_led.o
+                0x08013f90                app_main
+ *(.text.*)
+ .text._ZN3r2p8SysLock_7acquireEv
+                0x08014060       0x10 build/obj/led.o
+ .text._ZN3r2p8SysLock_7releaseEv
+                0x08014070       0x10 build/obj/led.o
+ .text._ZN3r2p7SysLock7acquireEv
+                0x08014080        0x8 build/obj/led.o
+ *fill*         0x08014088        0x8 00
+ .text._ZN3r2p7SysLock7releaseEv
+                0x08014090        0x8 build/obj/led.o
+ *fill*         0x08014098        0x8 00
+ .text._ZN3r2p11MemoryPool_12alloc_unsafeEv
+                0x080140a0       0x18 build/obj/led.o
+ *fill*         0x080140b8        0x8 00
+ .text._ZNK3r2p4Time8to_s_rawEv
+                0x080140c0       0x24 build/obj/led.o
+ *fill*         0x080140e4        0xc 00
+ .text._ZN3r2p4TimeaSERKS0_
+                0x080140f0       0x18 build/obj/led.o
+ *fill*         0x08014108        0x8 00
+ .text._ZN3r2p4Time2msEl
+                0x08014110       0x20 build/obj/led.o
+ .text._ZN3r2p7Message12reset_unsafeEv
+                0x08014130       0x18 build/obj/led.o
+ *fill*         0x08014148        0x8 00
+ .text._ZN3r2p7MessageC2Ev
+                0x08014150       0x1c build/obj/led.o
+ *fill*         0x0801416c        0x4 00
+ .text._ZN3r2p13BasePublisher12alloc_unsafeERPNS_7MessageE
+                0x08014170       0x40 build/obj/led.o
+ .text._ZN3r2p13BasePublisher5allocERPNS_7MessageE
+                0x080141b0       0x28 build/obj/led.o
+ *fill*         0x080141d8        0x8 00
+ .text._ZN3r2p7Thread_5sleepERKNS_4TimeE
+                0x080141e0       0x6c build/obj/led.o
+ *fill*         0x0801424c        0x4 00
+ .text._ZN3r2p6Thread5sleepERKNS_4TimeE
+                0x08014250       0x10 build/obj/led.o
+ .text._ZNK3r2p10SpinEvent_10get_threadEv
+                0x08014260       0x10 build/obj/led.o
+ .text._ZN3r2p10SpinEvent_13signal_unsafeEj
+                0x08014270       0x3c build/obj/led.o
+ *fill*         0x080142ac        0x4 00
+ .text._ZNK3r2p9SpinEvent10get_threadEv
+                0x080142b0       0x18 build/obj/led.o
+ *fill*         0x080142c8        0x8 00
+ .text._ZN3r2p9SpinEvent13signal_unsafeEj
+                0x080142d0       0x18 build/obj/led.o
+ *fill*         0x080142e8        0x8 00
+ .text._ZNK3r2p4Node11get_enabledEv
+                0x080142f0       0x24 build/obj/led.o
+ *fill*         0x08014314        0xc 00
+ .text._ZN3r2p4Node13notify_unsafeEj
+                0x08014320       0x1c build/obj/led.o
+ *fill*         0x0801433c        0x4 00
+ .text._ZNK3r2p15LocalSubscriber16get_queue_lengthEv
+                0x08014340       0x1c build/obj/led.o
+ *fill*         0x0801435c        0x4 00
+ .text._ZN3r2p15LocalSubscriber12fetch_unsafeERPNS_7MessageERNS_4TimeE
+                0x08014360       0x40 build/obj/led.o
+ .text._ZN3r2p15LocalSubscriber13notify_unsafeERNS_7MessageERKNS_4TimeE
+                0x080143a0       0x60 build/obj/led.o
+ .text._ZN3r2p5Topic12alloc_unsafeEv
+                0x08014400       0x2c build/obj/led.o
+ *fill*         0x0801442c        0x4 00
+ .text._ZN3r2p4TimeC2IlEET_
+                0x08014430       0x14 build/obj/led.o
+ *fill*         0x08014444        0xc 00
+ .text._ZNK3r2p10ArrayQueueIPNS_7MessageEE10get_lengthEv
+                0x08014450       0x10 build/obj/led.o
+ .text._ZN3r2p10ArrayQueueIPNS_7MessageEE12fetch_unsafeERS2_
+                0x08014460       0x68 build/obj/led.o
+ *fill*         0x080144c8        0x8 00
+ .text._ZN3r2p10ArrayQueueIPNS_7MessageEE11post_unsafeES2_
+                0x080144d0       0x6c build/obj/led.o
+ *fill*         0x0801453c        0x4 00
+ .text._ZN3r2p9PublisherINS_6LedMsgEEC2Ev
+                0x08014540       0x20 build/obj/led.o
+                0x08014540                r2p::Publisher<r2p::LedMsg>::Publisher()
+                0x08014540                r2p::Publisher<r2p::LedMsg>::Publisher()
+ .text._ZN3r2p9PublisherINS_6LedMsgEED2Ev
+                0x08014560       0x34 build/obj/led.o
+                0x08014560                r2p::Publisher<r2p::LedMsg>::~Publisher()
+                0x08014560                r2p::Publisher<r2p::LedMsg>::~Publisher()
+ *fill*         0x08014594        0xc 00
+ .text._ZN3r2p9PublisherINS_6LedMsgEED0Ev
+                0x080145a0       0x1c build/obj/led.o
+                0x080145a0                r2p::Publisher<r2p::LedMsg>::~Publisher()
+ *fill*         0x080145bc        0x4 00
+ .text._ZN3r2p4Node9advertiseINS_6LedMsgEEEbRNS_9PublisherIT_EEPKcRKNS_4TimeE
+                0x080145c0       0x28 build/obj/led.o
+                0x080145c0                bool r2p::Node::advertise<r2p::LedMsg>(r2p::Publisher<r2p::LedMsg>&, char const*, r2p::Time const&)
+ *fill*         0x080145e8        0x8 00
+ .text._ZN3r2p9PublisherINS_6LedMsgEE5allocERPS1_
+                0x080145f0       0x1c build/obj/led.o
+                0x080145f0                r2p::Publisher<r2p::LedMsg>::alloc(r2p::LedMsg*&)
+ *fill*         0x0801460c        0x4 00
+ .text._ZN3r2p9PublisherINS_6LedMsgEE7publishERS1_
+                0x08014610       0x1c build/obj/led.o
+                0x08014610                r2p::Publisher<r2p::LedMsg>::publish(r2p::LedMsg&)
+ *fill*         0x0801462c        0x4 00
+ .text._ZN3r2p6LedMsgC2Ev
+                0x08014630       0x18 build/obj/led.o
+                0x08014630                r2p::LedMsg::LedMsg()
+                0x08014630                r2p::LedMsg::LedMsg()
+ *fill*         0x08014648        0x8 00
+ .text._ZN3r2p10SubscriberINS_6LedMsgELj5EEC2EPFbRKS1_E
+                0x08014650       0x5c build/obj/led.o
+                0x08014650                r2p::Subscriber<r2p::LedMsg, 5u>::Subscriber(bool (*)(r2p::LedMsg const&))
+                0x08014650                r2p::Subscriber<r2p::LedMsg, 5u>::Subscriber(bool (*)(r2p::LedMsg const&))
+ *fill*         0x080146ac        0x4 00
+ .text._ZN3r2p10SubscriberINS_6LedMsgELj5EED2Ev
+                0x080146b0       0x34 build/obj/led.o
+                0x080146b0                r2p::Subscriber<r2p::LedMsg, 5u>::~Subscriber()
+                0x080146b0                r2p::Subscriber<r2p::LedMsg, 5u>::~Subscriber()
+ *fill*         0x080146e4        0xc 00
+ .text._ZN3r2p10SubscriberINS_6LedMsgELj5EED0Ev
+                0x080146f0       0x1c build/obj/led.o
+                0x080146f0                r2p::Subscriber<r2p::LedMsg, 5u>::~Subscriber()
+ *fill*         0x0801470c        0x4 00
+ .text._ZN3r2p4Node9subscribeINS_6LedMsgELj5EEEbRNS_10SubscriberIT_XT0_EEEPKc
+                0x08014710       0x2c build/obj/led.o
+                0x08014710                bool r2p::Node::subscribe<r2p::LedMsg, 5u>(r2p::Subscriber<r2p::LedMsg, 5u>&, char const*)
+ *fill*         0x0801473c        0x4 00
+ .text._ZN3r2p16SubscriberExtBufINS_6LedMsgEEC2EPPS1_jPFbRKS1_E
+                0x08014740       0x2c build/obj/led.o
+                0x08014740                r2p::SubscriberExtBuf<r2p::LedMsg>::SubscriberExtBuf(r2p::LedMsg**, unsigned int, bool (*)(r2p::LedMsg const&))
+                0x08014740                r2p::SubscriberExtBuf<r2p::LedMsg>::SubscriberExtBuf(r2p::LedMsg**, unsigned int, bool (*)(r2p::LedMsg const&))
+ *fill*         0x0801476c        0x4 00
+ .text._ZN3r2p16SubscriberExtBufINS_6LedMsgEED2Ev
+                0x08014770       0x34 build/obj/led.o
+                0x08014770                r2p::SubscriberExtBuf<r2p::LedMsg>::~SubscriberExtBuf()
+                0x08014770                r2p::SubscriberExtBuf<r2p::LedMsg>::~SubscriberExtBuf()
+ *fill*         0x080147a4        0xc 00
+ .text._ZN3r2p16SubscriberExtBufINS_6LedMsgEED0Ev
+                0x080147b0       0x1c build/obj/led.o
+                0x080147b0                r2p::SubscriberExtBuf<r2p::LedMsg>::~SubscriberExtBuf()
+ *fill*         0x080147cc        0x4 00
+ .text._ZNK3r2p10Middleware10is_stoppedEv
+                0x080147d0       0x10 build/obj/pub_led.o
+ .text._ZN3r2p2okEv
+                0x080147e0       0x2c build/obj/pub_led.o
+                0x080147e0                r2p::ok()
+ *(.rodata)
+ *fill*         0x0801480c        0x4 00
+ .rodata        0x08014810       0x10 build/obj/common.o
+ .rodata        0x08014820       0x28 build/obj/led.o
+ *fill*         0x08014848        0x8 00
+ .rodata        0x08014850       0x10 build/obj/pub_led.o
+ *(.rodata.*)
+ .rodata._ZTVN3r2p10SubscriberINS_6LedMsgELj5EEE
+                0x08014860       0x28 build/obj/led.o
+                0x08014860                vtable for r2p::Subscriber<r2p::LedMsg, 5u>
+ *fill*         0x08014888        0x8 00
+ .rodata._ZTVN3r2p16SubscriberExtBufINS_6LedMsgEEE
+                0x08014890       0x28 build/obj/led.o
+                0x08014890                vtable for r2p::SubscriberExtBuf<r2p::LedMsg>
+ *fill*         0x080148b8        0x8 00
+ .rodata._ZTVN3r2p9PublisherINS_6LedMsgEEE
+                0x080148c0       0x10 build/obj/led.o
+                0x080148c0                vtable for r2p::Publisher<r2p::LedMsg>
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.gcc*)
+                0x080148d0                __config_start__ = .
+ *(app_config)
+ app_config     0x080148d0       0x24 build/obj/pub_led.o
+                0x080148f4                __config_end__ = .
+ *(app_config.*)
+
+.vfp11_veneer   0x080148f4        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x080148f4        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x080148f4        0x0
+ .iplt          0x00000000        0x0 build/obj/common.o
+
+.rel.dyn        0x080148f4        0x0
+ .rel.iplt      0x00000000        0x0 build/obj/common.o
+
+constructors    0x080148f4        0x0
+                0x080148f4                __init_array_start = .
+ *(SORT(.init_array.*))
+ *(.init_array)
+                0x080148f4                __init_array_end = .
+
+destructors     0x080148f4        0x0
+                0x080148f4                __fini_array_start = .
+ *(.fini_array)
+ *(SORT(.fini_array.*))
+                0x080148f4                __fini_array_end = .
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+
+.ARM.exidx      0x080148f4        0x0
+                0x080148f4                PROVIDE (__exidx_start, .)
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x080148f4                PROVIDE (__exidx_end, .)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame
+ *(.eh_frame)
+
+.textalign      0x080148f4        0xc
+                0x08014900                . = ALIGN (0x10)
+ *fill*         0x080148f4        0xc 00
+                0x08014900                _etext = .
+                0x08014900                __text_end__ = .
+                0x08014900                _textdata = _etext
+
+.stacks         0x20000000      0x800
+                0x20000000                . = ALIGN (0x8)
+                0x20000000                __main_stack_base__ = .
+                0x20000400                . = (. + __main_stack_size__)
+ *fill*         0x20000000      0x400 00
+                0x20000400                . = ALIGN (0x8)
+                0x20000400                __main_stack_end__ = .
+                0x20000400                __process_stack_base__ = .
+                0x20000400                __main_thread_stack_base__ = .
+                0x20000800                . = (. + __process_stack_size__)
+ *fill*         0x20000400      0x400 00
+                0x20000800                . = ALIGN (0x8)
+                0x20000800                __process_stack_end__ = .
+                0x20000800                __main_thread_stack_end__ = .
+
+.data           0x20000800        0x0 load address 0x08014900
+                0x20000800                . = ALIGN (0x4)
+                0x20000800                PROVIDE (_data, .)
+                0x20000800                __data_start__ = .
+ *(.data)
+ .data          0x20000800        0x0 build/obj/common.o
+ .data          0x20000800        0x0 build/obj/led.o
+ .data          0x20000800        0x0 build/obj/pub_led.o
+                0x20000800                . = ALIGN (0x4)
+ *(.data.*)
+                0x20000800                . = ALIGN (0x4)
+ *(.ramtext)
+                0x20000800                . = ALIGN (0x4)
+                0x20000800                PROVIDE (_edata, .)
+                0x20000800                __data_end__ = .
+
+.igot.plt       0x20000800        0x0 load address 0x08014900
+ .igot.plt      0x00000000        0x0 build/obj/common.o
+
+.bss            0x20000800        0x0 load address 0x08014900
+                0x20000800                . = ALIGN (0x4)
+                0x20000800                PROVIDE (_bss_start, .)
+                0x20000800                __bss_start__ = .
+ *(.bss)
+ .bss           0x20000800        0x0 build/obj/common.o
+ .bss           0x20000800        0x0 build/obj/led.o
+ .bss           0x20000800        0x0 build/obj/pub_led.o
+                0x20000800                . = ALIGN (0x4)
+ *(.bss.*)
+                0x20000800                . = ALIGN (0x4)
+ *(COMMON)
+                0x20000800                . = ALIGN (0x4)
+                0x20000800                PROVIDE (_bss_end, .)
+                0x20000800                __bss_end__ = .
+
+.noreset        0x20000800        0x0 load address 0x08014900
+                0x20000800                . = ALIGN (0x4)
+ *(.noreset)
+ *(.noreset.*)
+                0x20000800                PROVIDE (end, .)
+                0x20000800                _end = .
+                0x08000000                __flash_start__ = ORIGIN (flash)
+                0x08020000                __flash_end__ = (ORIGIN (flash) + 0x20000)
+                0x20000000                __ram_start__ = ORIGIN (ram)
+                0x20005000                __ram_end__ = (ORIGIN (ram) + 0x5000)
+                0x20000800                __heap_base__ = _end
+                0x20005000                __heap_end__ = __ram_end__
+                0x08014d3c                __program_start__ = (_textdata + (_edata - _data))
+                0x08020000                __program_end__ = (ORIGIN (flash) + 0x20000)
+LOAD /home/tino/workspace/openrobots/Middleware_v2/build/ch.elf
+Address of section .text set to 0x8013c50
+LOAD build/obj/common.o
+LOAD build/obj/led.o
+LOAD build/obj/pub_led.o
+OUTPUT(build/pub_led.elf elf32-littlearm)
+
+.debug_info     0x00000000     0xad8f
+ .debug_info    0x00000000      0x5d0 build/obj/common.o
+ .debug_info    0x000005d0     0x49f8 build/obj/led.o
+ .debug_info    0x00004fc8     0x5dc7 build/obj/pub_led.o
+
+.debug_abbrev   0x00000000      0xe79
+ .debug_abbrev  0x00000000      0x17d build/obj/common.o
+ .debug_abbrev  0x0000017d      0x667 build/obj/led.o
+ .debug_abbrev  0x000007e4      0x695 build/obj/pub_led.o
+
+.debug_loc      0x00000000      0xb67
+ .debug_loc     0x00000000       0x58 build/obj/common.o
+ .debug_loc     0x00000058      0x77a build/obj/led.o
+ .debug_loc     0x000007d2      0x395 build/obj/pub_led.o
+
+.debug_aranges  0x00000000      0x260
+ .debug_aranges
+                0x00000000       0x20 build/obj/common.o
+ .debug_aranges
+                0x00000020      0x170 build/obj/led.o
+ .debug_aranges
+                0x00000190       0xd0 build/obj/pub_led.o
+
+.debug_line     0x00000000     0x1508
+ .debug_line    0x00000000      0x3a2 build/obj/common.o
+ .debug_line    0x000003a2      0xa1f build/obj/led.o
+ .debug_line    0x00000dc1      0x747 build/obj/pub_led.o
+
+.debug_str      0x00000000     0x6a62
+ .debug_str     0x00000000      0x33d build/obj/common.o
+                                0x3b5 (size before relaxing)
+ .debug_str     0x0000033d     0x4169 build/obj/led.o
+                               0x465c (size before relaxing)
+ .debug_str     0x000044a6     0x25bc build/obj/pub_led.o
+                               0x6305 (size before relaxing)
+
+.comment        0x00000000       0x70
+ .comment       0x00000000       0x70 build/obj/common.o
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 build/obj/led.o
+ .comment       0x00000000       0x71 build/obj/pub_led.o
+
+.ARM.attributes
+                0x00000000       0x33
+ .ARM.attributes
+                0x00000000       0x33 build/obj/common.o
+ .ARM.attributes
+                0x00000033       0x33 build/obj/led.o
+ .ARM.attributes
+                0x00000066       0x33 build/obj/pub_led.o
+
+.debug_frame    0x00000000      0x7b8
+ .debug_frame   0x00000000       0x48 build/obj/common.o
+ .debug_frame   0x00000048      0x4fc build/obj/led.o
+ .debug_frame   0x00000544      0x274 build/obj/pub_led.o
+
+.debug_ranges   0x00000000      0x220
+ .debug_ranges  0x00000000      0x160 build/obj/led.o
+ .debug_ranges  0x00000160       0xc0 build/obj/pub_led.o
