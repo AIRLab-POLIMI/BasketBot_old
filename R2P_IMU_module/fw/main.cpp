@@ -88,8 +88,8 @@ bool qei2_callback(const r2p::QEIMsg &msg) {
 
 msg_t velocity_node(void *arg) {
 	r2p::Node node("velocity");
-	r2p::Subscriber<r2p::Velocity3Msg, 5> vel_sub;
-	r2p::Velocity3Msg *velp;
+	/*r2p::Subscriber<r2p::Velocity3Msg, 5> vel_sub;
+	r2p::Velocity3Msg *velp;*/
 	r2p::Subscriber<r2p::QEIMsg, 5> qei1_sub(qei1_callback);
 	r2p::Subscriber<r2p::QEIMsg, 5> qei2_sub(qei2_callback);
 	r2p::Publisher<r2p::Velocity3Msg> odometry_pub;
@@ -101,7 +101,7 @@ msg_t velocity_node(void *arg) {
 
 	node.subscribe(qei1_sub, "qei1");
 	node.subscribe(qei2_sub, "qei2");
-	node.subscribe(vel_sub, "velocity");
+	//node.subscribe(vel_sub, "velocity");
 	if (!node.advertise(odometry_pub, "odometry")) while(1);
 
 	vel_pid.config(1.0, 3, 0, 0.05, -5.0, 5.0);
@@ -128,13 +128,13 @@ msg_t velocity_node(void *arg) {
 			odometry_pub.publish(*msgp);
 		}
 
-		while (vel_sub.fetch(velp)) {
+		/*while (vel_sub.fetch(velp)) {
 			palTogglePad(LED2_GPIO, LED2);
 			vel_setpoint = velp->x;
 			w_setpoint = velp->w;
 			vel_sub.release(*velp);
 		}
-		vel_pid.set(vel_setpoint);
+		vel_pid.set(vel_setpoint);*/
 
 	}
 	return CH_SUCCESS;
@@ -145,8 +145,10 @@ msg_t velocity_node(void *arg) {
  */
 msg_t balance_node(void *arg) {
 	r2p::Node node("balance");
-	r2p::Subscriber<r2p::TiltMsg, 2> tilt_sub;
-	r2p::TiltMsg *tiltp;
+	//r2p::Subscriber<r2p::TiltMsg, 2> tilt_sub;
+	//r2p::TiltMsg *tiltp;
+	r2p::Subscriber<r2p::Velocity3Msg, 5> vel_sub;
+	r2p::Velocity3Msg *velp;
 
 	r2p::Publisher<r2p::PWM2Msg> pwm2_pub;
 	r2p::PWM2Msg *pwmp;
@@ -157,7 +159,8 @@ msg_t balance_node(void *arg) {
 	chRegSetThreadName("balance");
 
 	node.advertise(pwm2_pub, "pwm2");
-	node.subscribe(tilt_sub, "tilt");
+	//node.subscribe(tilt_sub, "tilt");
+	node.subscribe(vel_sub, "velocity");
 
 	PID pid;
 	//pid.config(800, 0.35, 0.09, 0.02, -4000, 4000);
@@ -174,16 +177,19 @@ msg_t balance_node(void *arg) {
 	for (;;) {
 		pid.set(angle_setpoint);
 
-		while (!tilt_sub.fetch(tiltp)) {
+		//while (!tilt_sub.fetch(tiltp)) {
+		while (!vel_sub.fetch(velp)){
 			r2p::Thread::sleep(r2p::Time::ms(1));
 		}
 
-		pwm = pid.update(tiltp->angle); //rad2grad
-		tilt_sub.release(*tiltp);
+		//pwm = pid.update(tiltp->angle); //rad2grad
+	    pwm = velp->x;
+		//tilt_sub.release(*tiltp);
+	    vel_sub.release(*velp);
 
 		if (pwm2_pub.alloc(pwmp)) {
-			pwmp->value[0] = (pwm - w_setpoint * 100); //FIXME
-			pwmp->value[1] = -(pwm + w_setpoint * 100); //FIXME
+			pwmp->value[0] = (pwm - w_setpoint * 100);
+			pwmp->value[1] = -(pwm + w_setpoint * 100);
 			pwm2_pub.publish(*pwmp);
 			palTogglePad(LED3_GPIO, LED3);
 			palSetPad(LED4_GPIO, LED4);
