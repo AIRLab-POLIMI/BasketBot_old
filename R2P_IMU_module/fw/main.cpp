@@ -177,14 +177,11 @@ msg_t balance_node(void *arg) {
 	for (;;) {
 		pid.set(angle_setpoint);
 
-		//while (!tilt_sub.fetch(tiltp)) {
 		while (!vel_sub.fetch(velp)){
 			r2p::Thread::sleep(r2p::Time::ms(1));
 		}
 
-		//pwm = pid.update(tiltp->angle); //rad2grad
-	    pwm = velp->x;
-		//tilt_sub.release(*tiltp);
+	    pwm = 4000*velp->x;
 	    vel_sub.release(*velp);
 
 		if (pwm2_pub.alloc(pwmp)) {
