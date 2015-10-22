@@ -12,6 +12,8 @@
 #include <cstdlib>
 #include <cstring>
 
+#include "CurrentLoop.h"
+
 #ifndef R2P_MODULE_NAME
 #define R2P_MODULE_NAME "R2PMODX"
 #endif
@@ -63,7 +65,8 @@ int main(void) {
 	r2p::Thread::create_heap(NULL, THD_WA_SIZE(256), NORMALPRIO, r2p::ledsub_node, &ledsub_conf);
 
 	r2p::Thread::create_heap(NULL, THD_WA_SIZE(1024), NORMALPRIO + 1, r2p::qeipub_node, NULL);
-	r2p::Thread::create_heap(NULL, THD_WA_SIZE(1024), NORMALPRIO + 2, r2p::pwm2sub_node, NULL);
+	r2p::Thread::create_heap(NULL, THD_WA_SIZE(1024), NORMALPRIO + 1, r2p::current_pid2_node, NULL);
+//	r2p::Thread::create_heap(NULL, THD_WA_SIZE(1024), NORMALPRIO + 2, r2p::pwm2sub_node, NULL);
 //	r2p::Thread::create_heap(NULL, THD_WA_SIZE(1024), NORMALPRIO + 1, r2p::pid_node, NULL);
 
 	for (;;) {

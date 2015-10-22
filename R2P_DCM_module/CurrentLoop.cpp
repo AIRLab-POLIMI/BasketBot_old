@@ -10,12 +10,12 @@
 #include <r2p/Subscriber.hpp>
 
 #include <r2p/node/pid.hpp>
-#include <r2p/msg/motor.hpp>
+
+#include "CurrentLoop.h"
 
 namespace r2p {
 
 extern PWMConfig pwmcfg;
-extern QEIConfig qeicfg;
 
 #define M1 72
 #define M2 73
@@ -32,23 +32,19 @@ extern QEIConfig qeicfg;
 #define _Kt                0.0164
 #define _Tinv              26.0*10.0/3.0
 
-#define _Kp                0.106
+#define _OmegaC            6000.0
+#define _Kp                _OmegaC*_L
 #define _Ti                (_L/_R)
 #define _Ts                (252.0/72.0e6*(double)ADC_BUF_DEPTH)
 #define _maxV              24.0
 
-#define _maxI              (_maxV/_R)
+#define _maxI              25.0
 #define _precision         4096.0
 #define _currentPrecision  2.0*_maxI/_precision
 
 #define _pwmTicks          4096.0
 
 
-
-class Current2Msg: public Message {
-public:
-	float value[2];
-}R2P_PACKED;
 
 /*===========================================================================*/
 /* Utility functions.                                                        */
@@ -132,7 +128,6 @@ int pwm = 0;
 msg_t current_pid2_node(void * arg) {
 	Node node("pid");
 	Subscriber<Current2Msg, 5> current_sub;
-	Subscriber<tEncoderMsg, 5> enc_sub(current_callback);
 	Current2Msg * msgp;
 	Time last_setpoint(0);
 
@@ -153,16 +148,17 @@ msg_t current_pid2_node(void * arg) {
 		break;
 	}
 
-	/* Start the ADC driver and conversion*/
-	adcStart(&ADC_DRIVER, NULL);
-	adcStartConversion(&ADC_DRIVER, &adcgrpcfg, adc_samples, ADC_BUF_DEPTH);
-
 	// Init motor driver
 	palSetPad(DRIVER_GPIO, DRIVER_RESET);
 	chThdSleepMilliseconds(500);
 	pwmStart(&PWM_DRIVER, &pwmcfg);
 
-	node.subscribe(current_sub, "current2");
+	// Start the ADC driver and conversion
+	adcStart(&ADC_DRIVER, NULL);
+	adcStartConversion(&ADC_DRIVER, &adcgrpcfg, adc_samples, ADC_BUF_DEPTH);
+
+
+	/*node.subscribe(current_sub, "current2");
 
 	for (;;) {
 		if (node.spin(Time::ms(100))) {
@@ -181,6 +177,17 @@ msg_t current_pid2_node(void * arg) {
 			pwm_lld_disable_channel(&PWM_DRIVER, 0);
 			pwm_lld_disable_channel(&PWM_DRIVER, 1);
 
+			palTogglePad(LED4_GPIO, LED4);
+		}
+	}*/
+
+	current_pid.set(0.5);
+
+	for (;;) {
+		if (node.spin(Time::ms(100))) {
+			palTogglePad(LED3_GPIO, LED3);
+		}
+		else {
 			palTogglePad(LED4_GPIO, LED4);
 		}
 	}

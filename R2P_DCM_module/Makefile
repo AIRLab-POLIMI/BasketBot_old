@@ -66,7 +66,7 @@ endif
 PROJECT = ch
 
 # Imported source files and paths
-include ../../paths-old.mk
+include ../paths.mk
 include ./board.mk
 include $(CHIBIOS)/os/hal/platforms/STM32F1xx/platform.mk
 include $(CHIBIOS)/os/hal/hal.mk
@@ -75,8 +75,8 @@ include $(CHIBIOS)/os/kernel/kernel.mk
 include $(CHIBIOS)/test/test.mk
 include $(RTCAN)/platforms/STM32/platform.mk
 include $(RTCAN)/RTCAN.mk
-include $(R2P)/r2p.mk
-include $(R2P)/port/chibios/port.mk
+include $(MW)/middleware.mk
+include $(MW)/port/chibios/port.mk
 
 # Define linker script file here
 LDSCRIPT= ./STM32F103xB_bootloader.ld
@@ -95,9 +95,10 @@ CSRC = $(PORTSRC) \
 
 # C++ sources that can be compiled in ARM or THUMB mode depending on the global
 # setting.
-CPPSRC = $(R2PSRC) \
-	$(R2PNODES)/led.cpp \
-	$(R2PNODES)/motor.cpp \
+CPPSRC = $(MW_CPPSRC) \
+	$(MW)/src/node/led.cpp \
+	$(MW)/src/node/motor.cpp \
+	CurrentLoop.cpp \
 	chnew.cpp \
 	main.cpp
 
@@ -128,7 +129,7 @@ INCDIR = $(PORTINC) $(KERNINC) \
          $(HALINC) $(PLATFORMINC) $(BOARDINC) \
          $(CHIBIOS)/os/various \
          $(RTCANINC) $(RTCANPLATFORMINC) \
-         $(R2PINC)
+         $(MW_INC)
 
 #
 # Project, sources and paths

@@ -13,6 +13,7 @@ NULL, {
 #if STM32_PWM_USE_ADVANCED
                 72, /* XXX 1uS deadtime insertion   */
 #endif
+				0
                 };
 
 QEIConfig qeicfg = {
@@ -20,5 +21,7 @@ QEIConfig qeicfg = {
         QEI_BOTH_EDGES,
         QEI_DIRINV_FALSE,
 };
+
+#define MOTOR_ID 0
 
 #endif /* _CONFIG_H_ */
