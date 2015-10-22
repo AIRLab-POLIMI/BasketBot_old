@@ -1,6 +1,8 @@
 #ifndef _CONFIG_H_
 #define _CONFIG_H_
 
+#include "qei.h"
+
 /*
  * PWM configuration.
  */
@@ -22,6 +24,7 @@ QEIConfig qeicfg = {
         QEI_DIRINV_FALSE,
 };
 
-#define MOTOR_ID 0
+#define MOTOR_ID 1
+#define MOTOR_ID_STRING "1"
 
 #endif /* _CONFIG_H_ */

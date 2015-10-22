@@ -67,6 +67,7 @@
 
 #define PWM_DRIVER              PWMD1
 #define QEI_DRIVER              QEID4
+#define ADC_DRIVER              ADCD1
 
 /*
  * I/O ports initial setup, this configuration is established soon after reset

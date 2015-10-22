@@ -24,7 +24,7 @@ public:
 };
 
 
-PID::PID(void) {
+inline PID::PID(void) {
 	_i = 0;
 	_d = 0;
 	_setpoint = 0;
@@ -37,7 +37,7 @@ PID::PID(void) {
 }
 
 
-void PID::config(float k, float ti, float td, float ts, float min = -FLT_MAX, float max = FLT_MAX) {
+inline void PID::config(float k, float ti, float td, float ts, float min = -FLT_MAX, float max = FLT_MAX) {
 
 	_k = k;
 	_ki = (ti == 0) ? 0 : k * (ts / ti);
@@ -47,24 +47,24 @@ void PID::config(float k, float ti, float td, float ts, float min = -FLT_MAX, fl
 }
 
 
-void PID::set(float setpoint) {
+inline void PID::set(float setpoint) {
 
 	_setpoint = setpoint;
 }
 
-void PID::reset(void) {
+inline void PID::reset(void) {
 
 	_i = 0;
 	_d = 0;
 	_setpoint = 0;
 }
 
-float PID::get_setpoint(void) {
+inline float PID::get_setpoint(void) {
 
 	return _setpoint;
 }
 
-float PID::update(float measure) {
+inline float PID::update(float measure) {
 	float error;
 	float output;
 

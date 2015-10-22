@@ -1,7 +1,7 @@
 #include "ch.h"
 #include "hal.h"
 
-#include "config.h"
+//#include "config.h"
 
 #include <r2p/common.hpp>
 #include <r2p/Middleware.hpp>
@@ -44,13 +44,15 @@ extern PWMConfig pwmcfg;
 
 #define _pwmTicks          4096.0
 
-
+static PID current_pid;
+static int index = 0;
+static int pwm = 0;
 
 /*===========================================================================*/
 /* Utility functions.                                                        */
 /*===========================================================================*/
 
-uint8_t stm32_id8(void) {
+static uint8_t stm32_id8(void) {
 	const unsigned long * uid = (const unsigned long *) 0x1FFFF7E8;
 
 	return (uid[2] & 0xFF);
@@ -120,10 +122,6 @@ ADC_SQR3_SQ1_N(ADC_CHANNEL_IN3) };
 /*
  * PID node.
  */
-
-PID current_pid;
-int index = 0;
-int pwm = 0;
 
 msg_t current_pid2_node(void * arg) {
 	Node node("pid");

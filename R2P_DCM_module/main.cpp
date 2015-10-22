@@ -1,16 +1,19 @@
 #include "ch.h"
 #include "hal.h"
+#include "qei.h"
 
 #include "rtcan.h"
 
 #include <r2p/Middleware.hpp>
 
-#include "r2p/node/led.hpp"
-#include "r2p/node/motor.hpp"
+#include <r2p/node/led.hpp>
+#include <r2p/node/motor.hpp>
 
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>
+
+
 
 #include "CurrentLoop.h"
 
@@ -53,6 +56,7 @@ extern "C" {
 int main(void) {
 
 	halInit();
+	qeiInit();
 	chSysInit();
 
 	r2p::Middleware::instance.initialize(wa_info, sizeof(wa_info), r2p::Thread::LOWEST);
